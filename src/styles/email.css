@@ -1,0 +1,50 @@
+form {
+  margin: 1rem;
+  width: 100%;
+}
+
+.newsletter_top {
+  text-align: center;
+}
+
+.newsletter_top h2 {
+  font-size: 1.2rem;
+  line-height: 300%;
+}
+
+.newsletter_top p {
+  color: var(--footer-font);
+  line-height: 200%;
+}
+
+.newsletter {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.newsletter input {
+  width: 75%;
+  display: block;
+  margin: 7.2px;
+  padding: 8px 2px 4px;
+  border: 0;
+  border-bottom: 1px solid var(--footer-font);
+  box-sizing: border-box;
+  outline: none;
+}
+
+#email {
+  flex: 3;
+}
+
+input[type='submit'] {
+  background-color: transparent;
+  color: var(--footer-font);
+  flex: 1;
+}
+
+input[type='submit']:hover {
+  background-color: var(--footer-font);
+  color: var(--main-primary);
+}

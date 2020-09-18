@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,600&display=swap');
+
+main {
+  width: 100%;
+  padding: 40px;
+  border-bottom: 1px solid var(--foot-bottom-font);
+}
+
+.header,
+.main {
+  height: 100;
+}
+
+.main_nav {
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--foot-bottom-font);
+}
+
+.main_nav .item {
+  cursor: pointer;
+}
+
+.main_nav__right .info {
+  margin-right: 3rem;
+}
+
+.main_nav .item__mobile {
+  display: none;
+}
+
+.contents {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25%);
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding-top: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contents .content-item {
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content .mark div {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 50px;
+  background: var(--main-secondary);
+  color: var(--main-primary);
+  font-size: 0.8rem;
+  padding: 5px;
+  /* transform: rotate(180deg); */
+  translate: (-9px, -9px);
+  text-align: center;
+}
+
+@media all and (max-width: 960px) {
+  .contents {
+    grid-template-columns: repeat(auto-fit, 33%);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .contents {
+    grid-template-columns: repeat(auto-fit, 50%);
+  }
+}
+
+@media all and (max-width: 540px) {
+  .main_nav .item {
+    display: none;
+  }
+
+  .main_nav .item__mobile {
+    display: block;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .contents {
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
+}
