@@ -1,8 +1,8 @@
 {
-  "name": "assignment5",
+  "name": "Glasses store",
   "private": true,
   "version": "1.2.0",
-  "description": "WEB222 Assignment 5",
+  "description": "Glasses store",
   "scripts": {
     "prevalidate:index": "shx echo \"Validating src/index.html\"",
     "validate:index": "html-validator --verbose --validator=\"http://html5.validator.nu\" --file=\"src/index.html\"",
