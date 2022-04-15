@@ -15,10 +15,8 @@ This app is deployed and hosted using Netlify.
 
 # Demo
 
-<ul>
-  <p>Reponsive</p>
-![1](https://user-images.githubusercontent.com/71479209/163581727-42718010-7f74-4b02-a89e-ace478a636d5.gif)
-</ul>
+
+![1](https://user-images.githubusercontent.com/71479209/163581773-16db804e-08df-47ae-9fcc-e233eee013f3.gif)
 
 
 # Screen Shot
