@@ -17,11 +17,11 @@ This app is deployed and hosted using Netlify.
 
 <ul>
   <p>Reponsive</p>
-  "https://user-images.githubusercontent.com/71479209/163580619-ebaea250-4eb5-4593-b0f1-4995004a9ca4.gif"
 </ul>
 
-
 # Screen Shot
+  
+<p>![1](https://user-images.githubusercontent.com/71479209/163581463-6d511c44-aba4-49c0-a359-9f2a6dc0742b.gif)</p>
 
 
 
