@@ -22,29 +22,21 @@ This app is deployed and hosted using Netlify.
 
 # Screen Shot
   
-### 1. Main Page
-
-### 2. All Products Page
-  ![11](https://user-images.githubusercontent.com/71479209/163583202-441b120e-ed0d-4051-92f9-0f93ba267ca6.png)
-
-### 3. Hot Products Page
+### 1. Hot Products Page
   ![12](https://user-images.githubusercontent.com/71479209/163583208-ffa80d60-861e-47ea-84fb-03b1fcd7e6d6.png)
 
-### 4. New Products Page
+### 2. New Products Page
   ![13](https://user-images.githubusercontent.com/71479209/163583219-175c211e-a2f7-4a5c-93fc-d62826172b75.png)
 
-### 5. Sales Products Page
+### 3. Sales Products Page
   ![14](https://user-images.githubusercontent.com/71479209/163583233-58c128b3-1a5d-4445-805a-4b41c28697b0.png)
   
-### 6. Contact Page
+### 4. Contact Page
   ![16](https://user-images.githubusercontent.com/71479209/163582981-06ed4227-6b7f-4017-9541-526bc52a11dd.png)
 
-### 7. Contatct Page after Responsive
+### 5. Contatct Page after Responsive
   ![17](https://user-images.githubusercontent.com/71479209/163583045-bb6d68ee-4b58-4b5b-9bea-1db981ec9640.png)
   
-### 8. Subscribe Newsletter and confirm by Formspree
-
-
+### 6. Subscribe Newsletter and confirm by Formspree
   ![15](https://user-images.githubusercontent.com/71479209/163583457-06f59684-8a49-426f-8d4e-be9966ce75fe.png)
-  
-![19](https://user-images.githubusercontent.com/71479209/163583586-1daee444-ed23-4437-b2b6-29f15a874118.png)
+
