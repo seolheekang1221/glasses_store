@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
-    <script src="./contact.js" defer></script>
-    <script src="./map.js" defer></script>
-    <script src="./mobile.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav>
-        <div class="nav__left">
-          <div class="item"><a href="index.html">Home</a></div>
-          <div class="item"><a href="contact.html">Contact</a></div>
-        </div>
-        <div class="nav__center">
-          <h1><a href="index.html">R4ever</a></h1>
-        </div>
-        <div class="nav__right">
-          <div class="item"><i class="fas fa-search"></i></div>
-          <div class="item"><i class="fas fa-user"></i></div>
-          <div class="item"><i class="fas fa-cart-arrow-down"></i></div>
-          <div class="item">0</div>
-        </div>
-        <div class="nav__mobile"><i class="fas fa-bars"></i></div>
-      </nav>
-      <div class="menu__mobile">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet" />
+  <script src="./contact.js" defer></script>
+  <script src="./map.js" defer></script>
+  <script src="./mobile.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__left">
         <div class="item"><a href="index.html">Home</a></div>
         <div class="item"><a href="contact.html">Contact</a></div>
       </div>
-      <div class="nav__side">
-        <p>Glasses is the best fashion</p>
+      <div class="nav__center">
+        <h1><a href="index.html">R4ever</a></h1>
       </div>
-    </header>
-    <main class="contact">
-      <div id="osm-map"></div>
-      <form class="contact-form" action="https://httpbin.org/post" method="POST">
-        <h1>Get in Touch</h1>
-        <div class="input-container">
-          <input type="text" name="name" id="name" placeholder="Name" required />
-        </div>
-        <div class="input-container">
-          <input type="email" name="email" id="email" placeholder="Email" required />
-        </div>
-        <div class="input-container">
-          <input type="text" name="address" id="address" placeholder="Address" required />
-        </div>
-        <div class="input-container">
-          <input list="city-list" name="city" id="city" placeholder="City" required />
-          <datalist id="city-list">
-            <option value="Toronto"></option>
-            <option value="Mississauga"></option>
-            <option value="London"></option>
-            <option value="Ottawa"></option>
-            <option value="Waterloo"></option>
-          </datalist>
-        </div>
-        <div class="input-container">
-          <input type="text" name="postal" id="postal" placeholder="Postal code" />
-        </div>
-        <div class="error"></div>
-        <label for="options" class="options">Options: </label>
-        <div class="input-container" id="options">
-          <div class="options-container">
-            <input type="radio" name="options" id="question" value="Question" required />
-            <label for="question">Question</label>
-          </div>
-          <div class="options-container">
-            <input type="radio" name="options" id="comment" value="Comment" required />
-            <label for="comment">Comment</label>
-          </div>
-          <div class="options-container">
-            <input type="radio" name="options" id="problem" value="Problem" required />
-            <label for="problem">Order Problem</label>
-          </div>
-        </div>
-        <div class="input-container" id="order-problem">
-          <input
-            type="text"
-            name="problem_comment"
-            id="problem_comment"
-            placeholder="Describe order problem"
-          />
-        </div>
-        <div class="input-container">
-          <textarea name="message" id="message" placeholder="Message..." required></textarea>
-        </div>
-        <input type="hidden" name="owner" value="Seolhee Kang" />
-        <div class="input-container" id="submit">
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
-    </main>
-    <form action="https://formspree.io/mknqyapl" method="POST">
-      <div class="newsletter_top">
-        <h2 class="head_newsletter">Newsletter</h2>
-        <p>Get a new daily news of R4ever</p>
+      <div class="nav__right">
+        <div class="item"><i class="fas fa-search"></i></div>
+        <div class="item"><i class="fas fa-user"></i></div>
+        <div class="item"><i class="fas fa-cart-arrow-down"></i></div>
+        <div class="item">0</div>
       </div>
-      <div class="newsletter">
-        <input type="email" placeholder="Email Address" name="Email Address" id="email" required />
-        <input type="submit" value="Subscribe" />
+      <div class="nav__mobile"><i class="fas fa-bars"></i></div>
+    </nav>
+    <div class="menu__mobile">
+      <div class="item"><a href="index.html">Home</a></div>
+      <div class="item"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="nav__side">
+      <p>Glasses is the best fashion</p>
+    </div>
+  </header>
+  <main class="contact">
+    <div id="osm-map"></div>
+    <form class="contact-form" action="https://httpbin.org/post" method="POST">
+      <h1>Get in Touch</h1>
+      <div class="input-container">
+        <input type="text" name="name" id="name" placeholder="Name" required />
+      </div>
+      <div class="input-container">
+        <input type="email" name="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="input-container">
+        <input type="text" name="address" id="address" placeholder="Address" required />
+      </div>
+      <div class="input-container">
+        <input list="city-list" name="city" id="city" placeholder="City" required />
+        <datalist id="city-list">
+          <option value="Toronto"></option>
+          <option value="Mississauga"></option>
+          <option value="London"></option>
+          <option value="Ottawa"></option>
+          <option value="Waterloo"></option>
+        </datalist>
+      </div>
+      <div class="input-container">
+        <input type="text" name="postal" id="postal" placeholder="Postal code" />
+      </div>
+      <div class="error"></div>
+      <label for="options" class="options">Options: </label>
+      <div class="input-container" id="options">
+        <div class="options-container">
+          <input type="radio" name="options" id="question" value="Question" required />
+          <label for="question">Question</label>
+        </div>
+        <div class="options-container">
+          <input type="radio" name="options" id="comment" value="Comment" required />
+          <label for="comment">Comment</label>
+        </div>
+        <div class="options-container">
+          <input type="radio" name="options" id="problem" value="Problem" required />
+          <label for="problem">Order Problem</label>
+        </div>
+      </div>
+      <div class="input-container" id="order-problem">
+        <input type="text" name="problem_comment" id="problem_comment" placeholder="Describe order problem" />
+      </div>
+      <div class="input-container">
+        <textarea name="message" id="message" placeholder="Message..." required></textarea>
+      </div>
+      <input type="hidden" name="owner" value="Seolhee Kang" />
+      <div class="input-container" id="submit">
+        <input type="submit" value="Submit" />
       </div>
     </form>
-    <footer class="footer">
-      <div class="footer_left">
-        <ul>
-          <li>@2022 R4ever</li>
-          <li>FAQs</li>
-          <li>Blos</li>
-          <li>
-            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+  </main>
+  <form action="https://formspree.io/mknqyapl" method="POST">
+    <div class="newsletter_top">
+      <h2 class="head_newsletter">Newsletter</h2>
+      <p>Get a new daily news of R4ever</p>
+    </div>
+    <div class="newsletter">
+      <input type="email" placeholder="Email Address" name="Email Address" id="email" required />
+      <input type="submit" value="Subscribe" />
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="footer_left">
+      <ul>
+        <li>@2022 R4ever</li>
+        <li>FAQs</li>
+        <li>Blos</li>
+        <li>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

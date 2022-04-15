@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./script.js" defer></script>
-    <script src="./mobile.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav>
-        <div class="nav__left">
-          <div class="item"><a href="index.html">Home</a></div>
-          <div class="item"><a href="contact.html">Contact</a></div>
-          <!-- <div class="item">Features</div>
-          <div class="item">Pages</div>
-          <div class="item">Blog</div> -->
-        </div>
-        <div class="nav__center">
-          <h1><a href="index.html">R4ever</a></h1>
-        </div>
-        <div class="nav__right">
-          <div class="item"><i class="fas fa-search"></i></div>
-          <div class="item"><i class="fas fa-user"></i></div>
-          <div class="item"><i class="fas fa-cart-arrow-down"></i></div>
-          <div class="item">0</div>
-        </div>
-        <div class="nav__mobile"><i class="fas fa-bars"></i></div>
-      </nav>
-      <div class="menu__mobile">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="./script.js" defer></script>
+  <script src="./mobile.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__left">
         <div class="item"><a href="index.html">Home</a></div>
         <div class="item"><a href="contact.html">Contact</a></div>
       </div>
-      <div class="nav__side">
-        <p>Glasses is the best fashion</p>
+      <div class="nav__center">
+        <h1><a href="index.html">R4ever</a></h1>
       </div>
-    </header>
-    <main class="main">
-      <div class="main_nav">
-        <div class="item" id="all">All Products</div>
-        <div class="item" id="hot">Hot Products</div>
-        <div class="item" id="new">New Products</div>
-        <div class="item" id="sales">Sales Products</div>
-        <div class="item__mobile" id="all-mobile">All</div>
-        <div class="item__mobile" id="hot-mobile">Hot</div>
-        <div class="item__mobile" id="new-mobile">New</div>
-        <div class="item__mobile" id="sales-mobile">Sales</div>
+      <div class="nav__right">
+        <div class="item"><i class="fas fa-search"></i></div>
+        <div class="item"><i class="fas fa-user"></i></div>
+        <div class="item"><i class="fas fa-cart-arrow-down"></i></div>
+        <div class="item">0</div>
       </div>
-      <div class="contents"></div>
-    </main>
-    <form action="https://formspree.io/mknqyapl" method="POST">
-      <div class="newsletter_top">
-        <h2 class="head_newsletter">Newsletter</h2>
-        <p>Get a new daily news of R4ever</p>
-      </div>
-      <div class="newsletter">
-        <input type="email" placeholder="Email Address" name="Email Address" id="email" required />
-        <input type="submit" value="Subscribe" />
-      </div>
-    </form>
-    <footer class="footer">
-      <div class="footer_left">
-        <ul>
-          <li>@2020 R4ever</li>
-          <li>FAQs</li>
-          <li>Blos</li>
-          <li>
-            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+      <div class="nav__mobile"><i class="fas fa-bars"></i></div>
+    </nav>
+    <div class="menu__mobile">
+      <div class="item"><a href="index.html">Home</a></div>
+      <div class="item"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="nav__side">
+      <p>Glasses is the best fashion</p>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main_nav">
+      <div class="item" id="all">All Products</div>
+      <div class="item" id="hot">Hot Products</div>
+      <div class="item" id="new">New Products</div>
+      <div class="item" id="sales">Sales Products</div>
+      <div class="item__mobile" id="all-mobile">All</div>
+      <div class="item__mobile" id="hot-mobile">Hot</div>
+      <div class="item__mobile" id="new-mobile">New</div>
+      <div class="item__mobile" id="sales-mobile">Sales</div>
+    </div>
+    <div class="contents"></div>
+  </main>
+  <form action="https://formspree.io/mknqyapl" method="POST">
+    <div class="newsletter_top">
+      <h2 class="head_newsletter">Newsletter</h2>
+      <p>Get a new daily news of R4ever</p>
+    </div>
+    <div class="newsletter">
+      <input type="email" placeholder="Email Address" name="Email Address" id="email" required />
+      <input type="submit" value="Subscribe" />
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="footer_left">
+      <ul>
+        <li>@2022 R4ever</li>
+        <li>FAQs</li>
+        <li>Blos</li>
+        <li>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

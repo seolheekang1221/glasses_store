@@ -9,7 +9,7 @@ const errMessage = {
 };
 
 const contactsForm = {
-  inputHandler: function(e) {
+  inputHandler: function (e) {
     const { name, value } = e.target;
     console.log(name, value);
     switch (name) {
@@ -20,7 +20,7 @@ const contactsForm = {
         contactsForm.optionsHandler(value);
     }
   },
-  optionsHandler: function(option) {
+  optionsHandler: function (option) {
     const orderProblem = document.querySelector('#order-problem');
     if (option === 'Problem') {
       orderProblem.style.display = 'block';
@@ -28,7 +28,7 @@ const contactsForm = {
       orderProblem.style.display = 'none';
     }
   },
-  validatePostal: function(postalCode) {
+  validatePostal: function (postalCode) {
     const postalRegex = /^[A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d$/;
     const error = document.querySelectorAll('.error');
     if (postalCode.length !== 0 && !postalRegex.test(postalCode)) {
@@ -41,7 +41,7 @@ const contactsForm = {
   }
 };
 
-const setEventHandler = function() {
+const setEventHandler = function () {
   const name = document.querySelector('#name');
   const email = document.querySelector('#email');
   const address = document.querySelector('#address');
@@ -65,6 +65,6 @@ const setEventHandler = function() {
   message.addEventListener('input', contactsForm.inputHandler);
 };
 
-window.onload = function() {
+window.onload = function () {
   setEventHandler();
 };
